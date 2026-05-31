@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/stylesheet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
+    <script>
+      window.Vue ||
+        document.write(
+          '<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>',
+        );
+    </script>
+    <title>運命線探偵78 - TOP</title>
+    <meta
+      name="description"
+      content="「運命線探偵78」は、ラジアン(柏木主税)によってタロットカードから異能探偵としてキャラクターデザインされたオリジナルキャラおよびその周辺コンテンツです。"
+    />
+    <meta
+      name="keywords"
+      content="運命線探偵78,百花繚乱研究所,特殊探偵団セブンティエイト"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="app-menu">
+        <hamberger-menu></hamberger-menu>
+      </div>
+      <script src="/src/hamberger-menu.js"></script>
+    </header>
+    <main id="app-list-comp">
+      <h1>
+        運命線探偵78<br /><span style="font-size: 0.6em; font-weight: 400"
+          >the Fate-Line Investigator 78</span
+        >
+      </h1>
+
+      <div class="background0">
+        <h2>概要</h2>
+        <!-- 作品概要は author が記載してください -->
+        <p>（概要をここに記載）</p>
+        <div class="background1">
+          <h3>あらすじ</h3>
+          <!-- 作品説明は author が記載してください -->
+          <p>（説明をここに記載）</p>
+        </div>
+        <div class="background1">
+          <h3>アルカナホルダーについて</h3>
+          <!-- 作品説明は author が記載してください -->
+          <p>（説明をここに記載）</p>
+        </div>
+      </div>
+
+      <div>
+        <a href="/characters.html">
+          <h2 class="h2-a-link">キャラクター紹介は→こちら</h2>
+        </a>
+      </div>
+
+      <div class="background0">
+        <h2>新着情報</h2>
+
+        <!-- ▼▼▼ 新着情報 記入ひな形 ▼▼▼
+
+          セクションは日付ごとに <div class="background1"> ブロックで区切ります。
+          各記事は list-comp コンポーネントで記述します。
+          ・画像あり → :wide-style="true"
+          ・リンクのみ → :wide-style 省略（デフォルト false）
+
+          ─────────────────────────────────
+          【進行中セクション（継続中の情報）】
+          ─────────────────────────────────
+          <div class="background1">
+            <h3>進行中</h3>
+
+            ＜画像あり ワイドカード＞
+            <list-comp :wide-style="true">
+              <template #title>記事タイトル</template>
+              <template #imagelink>
+                <a href="リンク先URL">
+                  <img src="/img/ファイル名.png" alt="画像の説明" />
+                </a>
+              </template>
+              <a class="a-link" href="リンク先URL">リンクテキスト1</a>
+              <a class="a-link" href="リンク先URL">リンクテキスト2</a>
+            </list-comp>
+
+            ＜リンクのみ（画像なし）カード＞
+            <list-comp>
+              <template #title>記事タイトル</template>
+              <a class="a-link" href="リンク先URL">リンクテキスト</a>
+            </list-comp>
+          </div>
+
+          ─────────────────────────────────
+          【日付別セクション（例: 20XX年X月）】
+          ─────────────────────────────────
+          <div class="background1">
+            <h3>20XX年X月</h3>
+
+            <list-comp :wide-style="true">
+              <template #title>記事タイトル</template>
+              <template #imagelink>
+                <a href="リンク先URL">
+                  <img src="/img/ファイル名.png" alt="画像の説明" />
+                </a>
+              </template>
+              <a class="a-link" href="リンク先URL">リンクテキスト</a>
+            </list-comp>
+          </div>
+
+        ▲▲▲ ひな形ここまで / 以下に実際のお知らせを記載してください ▲▲▲ -->
+
+      </div>
+
+      <div class="background1">
+        <h2>外部リンク</h2>
+        <p>
+          <a class="a-link" href="https://database.numbertales-radiann.net/"
+            >創作ガイドライン/Creation Guidelines</a
+          >
+          <a class="a-link" href="https://www.pixiv.net/users/44375569"
+            >原作者公式pixiv</a
+          >
+          <a class="a-link" href="https://radiann-kswg.fanbox.cc/"
+            >原作者公式pixivFANBOX</a
+          >
+          <a class="a-link" href="https://radiann-kswg.booth.pm/"
+            >原作者公式BOOTH</a
+          >
+        </p>
+      </div>
+    </main>
+    <footer>
+      <div id="app-credit">
+        <footer-credit></footer-credit>
+      </div>
+    </footer>
+    <script src="/src/list-components.js"></script>
+    <script src="/src/credit-footer.js"></script>
+  </body>
+</html>
