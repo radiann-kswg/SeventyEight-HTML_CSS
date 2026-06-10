@@ -15,12 +15,15 @@ const customScrollComponent = {
   `,
 };
 
+// 他の Vue アプリから custom-scroll を取り込めるようにするヘルパー
+function registerCustomScrollTo(app) {
+  app.component("custom-scroll", customScrollComponent);
+}
+
 document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll("[data-custom-scroll-root]").forEach((element) => {
-    Vue.createApp({
-      components: {
-        "custom-scroll": customScrollComponent,
-      },
-    }).mount(element);
+  document.querySelectorAll("#app-custom-scroll").forEach((element) => {
+    const app = Vue.createApp({});
+    registerCustomScrollTo(app);
+    app.mount(element);
   });
 });

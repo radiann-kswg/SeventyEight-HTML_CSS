@@ -8,7 +8,7 @@ const listCompComponent = {
   },
   template: `
     <div v-if="wideStyle" class="list-comp-wide">
-      <div class="list-comp-wide-image">
+      <div class="list-comp-img">
         <slot name="imagelink"></slot>
       </div>
       <div class="list-comp-wide-body">
@@ -17,7 +17,9 @@ const listCompComponent = {
       </div>
     </div>
     <div v-else class="list-comp-card">
-      <slot name="imagelink"></slot>
+      <div class="list-comp-card-img">
+        <slot name="imagelink"></slot>
+      </div>
       <div class="list-comp-title"><slot name="title"></slot></div>
       <slot></slot>
     </div>
@@ -26,10 +28,12 @@ const listCompComponent = {
 
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("#app-list-comp").forEach((element) => {
-    Vue.createApp({
-      components: {
-        "list-comp": listCompComponent,
-      },
-    }).mount(element);
+    const app = Vue.createApp({});
+    app.component("list-comp", listCompComponent);
+    // custom-scroll.js が先に読み込まれていれば <custom-scroll> もこのアプリで使えるようにする
+    if (typeof registerCustomScrollTo === "function") {
+      registerCustomScrollTo(app);
+    }
+    app.mount(element);
   });
 });

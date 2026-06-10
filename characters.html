@@ -27,23 +27,101 @@
     </header>
     <main id="app-list-comp">
       <h1>キャラクター一覧</h1>
-
       <div class="background0">
-        <h2>特殊探偵団セブンティエイト</h2>
-        <!-- キャラクターカードは author が list-comp コンポーネントを使って追加してください -->
-        <!--
-          使用例:
-          <list-comp>
-            <template #title>キャラクター名</template>
+        <h2>采配幹部(ディーラーズ)</h2>
+        <div class="background1">
+          <list-comp :wide-style="true">
+            <template #title>錦野舞＆錦野歌嫁</template>
             <template #imagelink>
-              <a href="/characters/chara-xxx.html">
-                <img alt="キャラクター名" src="/img/xxx.png" class="character-list-img" />
+              <img
+                src="/img/arts/arts_imgFLDealer.png"
+                alt="錦野舞＆錦野歌嫁"
+              />
+            </template>
+            <p>
+              この創作シリーズの主人公となる２人。<br />
+              姉の「錦野舞」はタロットカードの占いを、妹の「錦野歌嫁」は剣術を得意としており、采配幹部(ディーラーズ)の能力もそれらの持ち味を生かした形で発揮されています。<br />
+              78のアルカナムスペックを“采配”することに長ける２人ですが、果たして彼女らを待ち受ける数奇な運命は、どのような未来(あした)を切り開くのでしょう－－
+            </p>
+          </list-comp>
+        </div>
+      </div>
+      <div class="background0">
+        <h2>アルカナホルダー</h2>
+        <custom-scroll :horizontal="true">
+          <list-comp>
+            <template #title>愚者：フェニクス</template>
+            <template #imagelink>
+              <a href="/characters/charater-m0.html">
+                <img
+                  alt="愚者：フェニクス"
+                  src="/img/crddsn/crddsn_imgFLM0.png"
+                  class="character-list-img"
+                />
               </a>
             </template>
-            <a class="a-link" href="/characters/chara-xxx.html">詳細を見る</a>
           </list-comp>
-        -->
-        <p>（キャラクター一覧をここに追加）</p>
+          <list-comp>
+            <template #title>魔術師：オリジン </template>
+            <template #imagelink>
+              <a href="/characters/charater-m1.html">
+                <img
+                  alt="魔術師：オリジン"
+                  src="/img/crddsn/crddsn_imgFLM1.png"
+                  class="character-list-img"
+                />
+              </a>
+            </template>
+          </list-comp>
+          <list-comp>
+            <template #title>女帝：ウェヌス</template>
+            <template #imagelink>
+              <a href="/characters/charater-m3.html">
+                <img
+                  alt="女帝：ウェヌス"
+                  src="/img/crddsn/crddsn_imgFLM3.png"
+                  class="character-list-img"
+                />
+              </a>
+            </template>
+          </list-comp>
+          <list-comp>
+            <template #title>力：リオン</template>
+            <template #imagelink>
+              <a href="/characters/charater-m8.html">
+                <img
+                  alt="力：リオン"
+                  src="/img/crddsn/crddsn_imgFLM8.png"
+                  class="character-list-img"
+                />
+              </a>
+            </template>
+          </list-comp>
+          <list-comp>
+            <template #title>隠者：ヴェール</template>
+            <template #imagelink>
+              <a href="/characters/charater-m9.html">
+                <img
+                  alt="隠者：ヴェール"
+                  src="/img/crddsn/crddsn_imgFLM9.png"
+                  class="character-list-img"
+                />
+              </a>
+            </template>
+          </list-comp>
+          <list-comp>
+            <template #title>月：ルネ</template>
+            <template #imagelink>
+              <a href="/characters/charater-m18.html">
+                <img
+                  alt="月：ルネ"
+                  src="/img/crddsn/crddsn_imgFLM18.png"
+                  class="character-list-img"
+                />
+              </a>
+            </template>
+          </list-comp>
+        </custom-scroll>
       </div>
     </main>
     <footer>
@@ -51,6 +129,7 @@
         <footer-credit></footer-credit>
       </div>
     </footer>
+    <script src="/src/custom-scroll.js"></script>
     <script src="/src/list-components.js"></script>
     <script src="/src/credit-footer.js"></script>
   </body>

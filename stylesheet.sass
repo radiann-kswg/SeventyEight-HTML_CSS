@@ -332,6 +332,15 @@ p
 		background: $accent-gold
 		border-radius: 3px
 
+.scroll-content--vertical
+	overflow-x: hidden
+	overflow-y: auto
+	flex-direction: column
+	scroll-snap-type: y mandatory
+	&::-webkit-scrollbar
+		height: auto
+		width: 6px
+
 // ===== キャラクター一覧カード =====
 .character-list-img
 	width: 100%
@@ -356,6 +365,20 @@ p
 	color: $secondary-dark
 	margin: 10px 0 8px
 	line-height: 1.4
+
+.list-comp-img
+	max-width: 50%
+	img
+		max-width: 100%
+		object-fit: cover
+
+.list-comp-card-img
+	max-width: 100%
+	min-height: 285px
+	img
+		max-width: 100%
+		height: 100%
+		object-fit: cover
 
 .list-comp-wide
 	@include card-style
@@ -433,3 +456,28 @@ footer
 	overflow-y: auto
 	padding: 30px
 	position: relative
+
+// ===== キャラクター詳細ページ =====
+.character-detail
+	display: flex
+	gap: 24px
+	align-items: flex-start
+	margin: 10px 0
+	@media screen and (max-width: $responsive-midiumsize)
+		flex-direction: column
+
+.character-detail-info
+	flex: 1 1 55%
+	min-width: 0
+
+.character-detail-image
+	flex: 0 1 40%
+	text-align: center
+	@media screen and (max-width: $responsive-midiumsize)
+		flex: 1 1 100%
+		width: 75%
+	img
+		max-width: 100%
+		border-radius: 12px
+		box-shadow: 7px 7px 5px rgba($primary-dark, 0.5)
+		display: inline-block

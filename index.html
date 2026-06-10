@@ -39,82 +39,86 @@
       <div class="background0">
         <h2>概要</h2>
         <!-- 作品概要は author が記載してください -->
-        <p>（概要をここに記載）</p>
+        <p>
+          ラジアン(柏木主税)が趣味で同人制作しているタロットカード78枚をモチーフにした創作キャラクター。<br />
+          タロットカードそれぞれをモチーフにしたキャラクターが描かれた公式タロットの制作や、タロットカードに関する独自のコンテンツ制作を展開予定。
+        </p>
         <div class="background1">
           <h3>あらすじ</h3>
-          <!-- 作品説明は author が記載してください -->
-          <p>（説明をここに記載）</p>
+          <p>
+            九蓮国に突如として発生した“未来消失”という神隠し現象を巡り、タロットカードでの占いを得意とする「錦野舞」と剣術に長けた妹の「錦野歌嫁」は、78の“アルカナホルダー”による異能調査組織「特殊探偵団セブンティエイト」の「采配幹部(ディーラーズ)」としていくつもの特殊事件に挑む。<br />
+            世界の運命を大きく揺るがす数多くの岐路(ブランチ)を巡る調査の果てで、彼女たちは少しずつ自らが歩むべき未来(あした)を見出していく－－
+          </p>
         </div>
         <div class="background1">
           <h3>アルカナホルダーについて</h3>
-          <!-- 作品説明は author が記載してください -->
-          <p>（説明をここに記載）</p>
+          <p>
+            78枚のタロットカードそれぞれを模した能力“アルカナホルダー”は、“未来消失”の原因となる運命の分岐：岐路(ブランチ)の異変を解決する力を有している。<br />
+            その能力は、幾度と重なる選択の過程に影響を及ぼす因果衝突(コンフリクト)を解消し
+            人々を正しい未来へ導く希望の光であり、同時に強力な世界改竄能力により身体と精神の分解と再構築を加速させるという
+            強大な代償を伴う命の絶望でもある。<br />
+            それぞれの能力を胸に未来(あした)の路を歩む姿は、まるで占星術のような悟りを有するかのようだった－－
+          </p>
         </div>
       </div>
 
       <div>
         <a href="/characters.html">
-          <h2 class="h2-a-link">キャラクター紹介は→こちら</h2>
+          <h2 class="h2-a-link">キャラクター紹介はこちら</h2>
         </a>
       </div>
 
       <div class="background0">
         <h2>新着情報</h2>
-
-        <!-- ▼▼▼ 新着情報 記入ひな形 ▼▼▼
-
-          セクションは日付ごとに <div class="background1"> ブロックで区切ります。
-          各記事は list-comp コンポーネントで記述します。
-          ・画像あり → :wide-style="true"
-          ・リンクのみ → :wide-style 省略（デフォルト false）
-
-          ─────────────────────────────────
-          【進行中セクション（継続中の情報）】
-          ─────────────────────────────────
+        <custom-scroll :horizontal="false">
           <div class="background1">
             <h3>進行中</h3>
-
-            ＜画像あり ワイドカード＞
             <list-comp :wide-style="true">
-              <template #title>記事タイトル</template>
+              <template #title
+                >公式タロットカード<br />制作メンバー募集中！</template
+              >
               <template #imagelink>
-                <a href="リンク先URL">
-                  <img src="/img/ファイル名.png" alt="画像の説明" />
+                <a href="/news/official-tarot_recruitment.html">
+                  <img
+                    src="/img/news/official-tarot_news-202606.png"
+                    alt="公式タロットカード制作メンバー募集"
+                  />
                 </a>
               </template>
-              <a class="a-link" href="リンク先URL">リンクテキスト1</a>
-              <a class="a-link" href="リンク先URL">リンクテキスト2</a>
-            </list-comp>
-
-            ＜リンクのみ（画像なし）カード＞
-            <list-comp>
-              <template #title>記事タイトル</template>
-              <a class="a-link" href="リンク先URL">リンクテキスト</a>
+              <p>
+                <span class="p-bold">制作メンバー(敬称略)</span><br />
+                キャラクターイラスト：REITO_KYUN♡(黎兎)<br />
+                背景・3D制作：喜雨(kiu/xiyue)<br />
+                意匠デザイン：散狐アタスト, ラジアン(柏木主税)<br />
+                フォントデザイン：ラジアン(柏木主税)<br />
+                制作・企画：百花繚乱研究所(©ラジアン, 2021-2026)
+              </p>
             </list-comp>
           </div>
-
-          ─────────────────────────────────
-          【日付別セクション（例: 20XX年X月）】
-          ─────────────────────────────────
           <div class="background1">
-            <h3>20XX年X月</h3>
-
+            <h3>2025年秋</h3>
             <list-comp :wide-style="true">
-              <template #title>記事タイトル</template>
+              <template #title>「運命線探偵78」制作開始！</template>
               <template #imagelink>
-                <a href="リンク先URL">
-                  <img src="/img/ファイル名.png" alt="画像の説明" />
-                </a>
+                <img
+                  src="/img/news/pr_officialCard_202510.png"
+                  alt="「運命線探偵78」制作開始！"
+                />
               </template>
-              <a class="a-link" href="リンク先URL">リンクテキスト</a>
+              <p>
+                Misskeyユーザにピクリエで開催されたオンライン即売会「みすけっと」にて、公式タロットカードの進捗配布を行い、「運命線探偵78」の制作開始を発表しました。
+              </p>
+              <a
+                class="a-link"
+                href="https://radiann-kswg.booth.pm/items/7646689"
+                >制作進捗配布 Vol.1</a
+              >
             </list-comp>
           </div>
-
-        ▲▲▲ ひな形ここまで / 以下に実際のお知らせを記載してください ▲▲▲ -->
-
+        </custom-scroll>
       </div>
 
-      <div class="background1">
+      <div class="background0">
         <h2>外部リンク</h2>
         <p>
           <a class="a-link" href="https://database.numbertales-radiann.net/"
@@ -137,6 +141,7 @@
         <footer-credit></footer-credit>
       </div>
     </footer>
+    <script src="/src/custom-scroll.js"></script>
     <script src="/src/list-components.js"></script>
     <script src="/src/credit-footer.js"></script>
   </body>

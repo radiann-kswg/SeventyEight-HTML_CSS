@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/stylesheet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
+    <script>
+      window.Vue ||
+        document.write(
+          '<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>',
+        );
+    </script>
+    <title>力：リオン - 運命線探偵78</title>
+    <meta
+      name="description"
+      content="「運命線探偵78」は、ラジアン(柏木主税)によってタロットカードから異能探偵としてキャラクターデザインされたオリジナルキャラおよびその周辺コンテンツです。"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="app-menu">
+        <hamberger-menu></hamberger-menu>
+      </div>
+      <script src="/src/hamberger-menu.js"></script>
+    </header>
+    <main id="app-character-page">
+      <character-page-comp>
+        <template #title>力：リオン</template>
+        運命線の乱れの原因となる暴走したアルカナム存在の鎮圧をこなしている、異能組織『セブンティエイト特殊探偵団』（通称『運命線探偵』）の第８幹部。<br />
+        【力の獅子遣い】のアルカナムスペックを行使する彼女は、相手の怒りや熱情を操作する力を有しており、九蓮国に出現した凶悪な犯行を取り押さえてきました。<br />
+        ちなみに彼女はサーカス鑑賞という趣味があり、自分も興味本位で獅子を手名付けたいという一心から生まれた「レオ」という召喚獣と行動を共にすることも。
+        <a class="a-link" href="https://radiann-kswg.booth.pm/items/7646689"
+          >制作進捗配布 Vol.1</a
+        >
+        <template #fullname>【力の獅子遣い】リオン・インフィニティ</template>
+        <template #cardnumber>メジャーズ8番（遠し番号8番）</template>
+        <template #gender>無性別女性型</template>
+        <template #species>獅子</template>
+        <template #class>九蓮国支部幹部</template>
+        <template #characterimage>
+          <img
+            alt="力：リオン"
+            src="/img/crddsn/crddsn_imgFLM8.png"
+            class="character-img"
+          />
+        </template>
+      </character-page-comp>
+    </main>
+    <script src="/src/character-page.js"></script>
+    <footer>
+      <div id="app-credit">
+        <footer-credit></footer-credit>
+      </div>
+    </footer>
+    <script src="/src/credit-footer.js"></script>
+  </body>
+</html>
