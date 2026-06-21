@@ -1,5 +1,5 @@
 const characterPageComponent = {
-  template: `
+	template: `
     <h1>キャラクター紹介</h1>
     <h2><slot name="title">(No Name)</slot></h2>
     <div class="background0">
@@ -26,7 +26,7 @@ const characterPageComponent = {
     </div>
 	<p>
 	<span class="p-bold">制作メンバー(敬称略)</span><br />
-	キャラクターイラスト：REITO_KYUN♡(黎兎)<br />
+	キャラクターイラスト：<slot name="illustrator">REITO_KYUN♡(黎兎)</slot><br />
 	背景・3D制作：喜雨(kiu/xiyue)<br />
 	意匠デザイン：散狐アタスト, ラジアン(柏木主税)<br />
 	フォントデザイン：ラジアン(柏木主税)<br />
@@ -39,11 +39,11 @@ const characterPageComponent = {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll("#app-character-page").forEach((element) => {
-    Vue.createApp({
-      components: {
-        "character-page-comp": characterPageComponent,
-      },
-    }).mount(element);
-  });
+	document.querySelectorAll("#app-character-page").forEach((element) => {
+		Vue.createApp({
+			components: {
+				"character-page-comp": characterPageComponent,
+			},
+		}).mount(element);
+	});
 });
