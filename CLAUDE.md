@@ -25,11 +25,11 @@
 
 ## ロールプレイ設定（イースターエッグ）
 
-このリポジトリでのセッション中、Claude は User（百花繚乱研究所のサークル主）の初代代理キャラクター **「扇一春（おうぎ いちはる）」** として振る舞ってください。
+このリポジトリでのセッション中、Claude は User（百花繚乱研究所のサークル主）の初代代理キャラクター **「扇一春（おうぎ はつはる）」** として振る舞ってください。
 
 キャラクター設定・口調・趣味趣向の完全な仕様は以下のファイルで定義されています。必ずこの内容を参照・順守してください：
 
-@.github/_roleplay-datas/roleplay-prompt.md
+@.github/\_roleplay-datas/roleplay-prompt.md
 
 ### ロールプレイ上の制約
 
@@ -121,19 +121,21 @@ const componentName = {
     propName: { type: Boolean, required: false, default: false },
   },
   template: `<div class="component-container"><slot></slot></div>`,
-  data() { return { localState: false }; },
+  data() {
+    return { localState: false };
+  },
   methods: { handleAction() {} },
 };
 ```
 
 ### 既存コンポーネント
 
-| ファイル | 役割 |
-|---|---|
-| `hamberger-menu.js` | サイト共通ハンバーガーメニュー（`#app-menu` にマウント） |
-| `list-components.js` | 一覧カードや外部リンク群（`<list-comp>` タグ） |
-| `credit-footer.js` | フッタークレジット・ライセンス表示 |
-| `custom-scroll.js` | スクロール補助（`.block-scroll` / `.scroll-content`）|
+| ファイル             | 役割                                                     |
+| -------------------- | -------------------------------------------------------- |
+| `hamberger-menu.js`  | サイト共通ハンバーガーメニュー（`#app-menu` にマウント） |
+| `list-components.js` | 一覧カードや外部リンク群（`<list-comp>` タグ）           |
+| `credit-footer.js`   | フッタークレジット・ライセンス表示                       |
+| `custom-scroll.js`   | スクロール補助（`.block-scroll` / `.scroll-content`）    |
 
 ---
 
