@@ -224,6 +224,11 @@ const componentName = {
 2. 創作設定と UI 実装のどこまでを Copilot が触れてよいか明確にする
 3. user 判断が必要な文面は提案に留める
 
+### 提案ログ・自動トリアージの置き場
+
+- **提案ログ（自動トリアージ等）**: GitHub Issue triage 等の scheduled タスクやエージェントによる調査・修正方針の提案ログは、リポジトリ直下の `./.wip/` に Markdown で保存（ファイル名に日付を含める。例: `./.wip/{YYYY-MM-DD}_github-triage.md`）
+- **Git 管轄外**: `./.wip/` は `.gitignore` 済みのローカル作業用ディレクトリ。コミット対象には含めない
+
 ---
 
 ## パフォーマンスと保守

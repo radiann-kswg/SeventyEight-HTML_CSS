@@ -139,6 +139,13 @@ const componentName = {
 
 ---
 
+## 作業ログ・提案ログの置き場
+
+- 自動トリアージ（GitHub Issue triage 等の scheduled タスク）やエージェントによる調査・修正方針の **提案ログ** は、リポジトリ直下の `./.wip/` に Markdown で保存する（無ければ作成。ファイル名に日付を含める。例: `./.wip/{YYYY-MM-DD}_github-triage.md`）。
+- `./.wip/` は `.gitignore` 済みのローカル作業用ディレクトリ。コミット対象には含めず、公開・本反映の要否は User が判断する。
+
+---
+
 ## ライセンスと権利表記
 
 - `LICENCE`: Creative Commons Attribution-NonCommercial 4.0 International
