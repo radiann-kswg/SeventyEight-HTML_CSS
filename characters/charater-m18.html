@@ -1,47 +1,52 @@
 <!doctype html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="/stylesheet.css" />
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-    <script>
-      window.Vue ||
-        document.write(
-          '<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>',
-        );
-    </script>
-    <title>月：ルネ - 運命線探偵78</title>
-    <meta name="description" content="「運命線探偵78」は、ラジアン(柏木主税)によってタロットカードから異能探偵としてキャラクターデザインされたオリジナルキャラおよびその周辺コンテンツです。" />
-  </head>
-  <body>
-    <header>
-      <div id="app-menu">
-        <hamberger-menu></hamberger-menu>
-      </div>
-      <script src="/src/hamberger-menu.js"></script>
-    </header>
-    <main id="app-character-page">
-      <character-page-comp>
-        <template #title>月：ルネ</template>
-        <span class="p-bold">Coming Soon...</span>
-        <template #fullname>【不安の月】ルミナス</template>
-        <template #cardnumber>メジャーズ18番（遠し番号18番）</template>
-        <template #gender>無性別女性型</template>
-        <template #species>月狼</template>
-        <template #class>英皇国支部幹部</template>
-        <template #characterimage>
-          <img alt="月：ルネ" src="/img/crddsn/crddsn_imgFLM18.png" class="character-img" />
-        </template>
-      </character-page-comp>
-    </main>
-    <script src="/src/character-page.js"></script>
-    <footer>
-      <div id="app-credit">
-        <footer-credit></footer-credit>
-      </div>
-    </footer>
-    <script src="/src/credit-footer.js"></script>
-  </body>
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="/stylesheet.css" />
+	<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
+	<script>
+		window.Vue ||
+			document.write(
+				'<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>',
+			);
+	</script>
+	<title>月：ルネ - 運命線探偵78</title>
+	<meta name="description" content="「運命線探偵78」は、ラジアン(柏木主税)によってタロットカードから異能探偵としてキャラクターデザインされたオリジナルキャラおよびその周辺コンテンツです。" />
+</head>
+
+<body>
+	<header>
+		<div id="app-menu">
+			<hamberger-menu></hamberger-menu>
+		</div>
+		<script src="/src/hamberger-menu.js"></script>
+	</header>
+	<main id="app-character-page">
+		<character-page-comp>
+			<template #title>月：ルネ</template>
+			“未来消失”の事件に用いられる悪用技術の研究現場を俯瞰するべく英皇国で偵察活動を行っている、異能組織『セブンティエイト特殊探偵団』（通称『運命線探偵』）の第18幹部。<br />
+			【不安の月】のアルカナムスペックを行使する彼女は、不安感や安心感を操作した隠密行動を得意としておりますが、この能力は夜間にしか発現できず計画的な作戦が必要なようです。<br />
+			少し加害妄想の強い一面がありますが、それはきっと能力適正ゆえなので悪しからず。
+			<template #fullname>【不安の月】ルミナス</template>
+			<template #cardnumber>メジャーズ18番（遠し番号18番）</template>
+			<template #gender>無性別女性型</template>
+			<template #species>月狼</template>
+			<template #class>英皇国支部幹部</template>
+			<template #characterimage>
+				<img alt="月：ルネ" src="/img/crddsn/crddsn_imgFLM18.png" class="character-img" />
+			</template>
+		</character-page-comp>
+	</main>
+	<script src="/src/character-page.js"></script>
+	<footer>
+		<div id="app-credit">
+			<footer-credit></footer-credit>
+		</div>
+	</footer>
+	<script src="/src/credit-footer.js"></script>
+</body>
+
 </html>

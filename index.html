@@ -1,120 +1,123 @@
 <!doctype html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="/stylesheet.css" />
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-    <script>
-      window.Vue ||
-        document.write(
-          '<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>',
-        );
-    </script>
-    <title>運命線探偵78 - TOP</title>
-    <meta name="description" content="「運命線探偵78」は、ラジアン(柏木主税)によってタロットカードから異能探偵としてキャラクターデザインされたオリジナルキャラおよびその周辺コンテンツです。" />
-    <meta name="keywords" content="運命線探偵78,百花繚乱研究所,特殊探偵団セブンティエイト" />
-  </head>
-  <body>
-    <header>
-      <div id="app-menu">
-        <hamberger-menu></hamberger-menu>
-      </div>
-      <script src="/src/hamberger-menu.js"></script>
-    </header>
-    <main id="app-list-comp">
-      <h1>
-        運命線探偵78<br /><span style="font-size: 0.6em; font-weight: 400">the Fate-Line Investigator 78</span>
-      </h1>
 
-      <div class="background0">
-        <h2>概要</h2>
-        <!-- 作品概要は author が記載してください -->
-        <p>
-          ラジアン(柏木主税)が趣味で同人制作しているタロットカード78枚をモチーフにした創作キャラクター。<br />
-          タロットカードそれぞれをモチーフにしたキャラクターが描かれた公式タロットの制作や、タロットカードに関する独自のコンテンツ制作を展開予定。
-        </p>
-        <div class="background1">
-          <h3>あらすじ</h3>
-          <p>
-            九蓮国に突如として発生した“未来消失”という神隠し現象を巡り、タロットカードでの占いを得意とする「錦野舞」と剣術に長けた妹の「錦野歌嫁」は、78の“アルカナホルダー”による異能調査組織「特殊探偵団セブンティエイト」の「采配幹部(ディーラーズ)」としていくつもの特殊事件に挑む。<br />
-            世界の運命を大きく揺るがす数多くの岐路(ブランチ)を巡る調査の果てで、彼女たちは少しずつ自らが歩むべき未来(あした)を見出していく－－
-          </p>
-        </div>
-        <div class="background1">
-          <h3>アルカナホルダーについて</h3>
-          <p>
-            78枚のタロットカードそれぞれを模した能力“アルカナホルダー”は、“未来消失”の原因となる運命の分岐：岐路(ブランチ)の異変を解決する力を有している。<br />
-            その能力は、幾度と重なる選択の過程に影響を及ぼす因果衝突(コンフリクト)を解消し
-            人々を正しい未来へ導く希望の光であり、同時に強力な世界改竄能力により身体と精神の分解と再構築を加速させるという
-            強大な代償を伴う命の絶望でもある。<br />
-            それぞれの能力を胸に未来(あした)の路を歩む姿は、まるで占星術のような悟りを有するかのようだった－－
-          </p>
-        </div>
-      </div>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="/stylesheet.css" />
+	<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
+	<script>
+		window.Vue ||
+			document.write(
+				'<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>',
+			);
+	</script>
+	<title>運命線探偵78 - TOP</title>
+	<meta name="description" content="「運命線探偵78」は、ラジアン(柏木主税)によってタロットカードから異能探偵としてキャラクターデザインされたオリジナルキャラおよびその周辺コンテンツです。" />
+	<meta name="keywords" content="運命線探偵78,百花繚乱研究所,特殊探偵団セブンティエイト" />
+</head>
 
-      <div>
-        <a href="/characters.html">
-          <h2 class="h2-a-link">キャラクター紹介はこちら</h2>
-        </a>
-      </div>
+<body>
+	<header>
+		<div id="app-menu">
+			<hamberger-menu></hamberger-menu>
+		</div>
+		<script src="/src/hamberger-menu.js"></script>
+	</header>
+	<main id="app-list-comp">
+		<h1>
+			運命線探偵78<br /><span style="font-size: 0.6em; font-weight: 400">the Fate-Line Investigator 78</span>
+		</h1>
 
-      <div class="background0">
-        <h2>新着情報</h2>
-        <custom-scroll :horizontal="false">
-          <div class="background1">
-            <h3>進行中</h3>
-            <list-comp :wide-style="true">
-              <template #title>公式タロットカード<br />制作メンバー募集中！</template>
-              <template #imagelink>
-                <a href="/news/official-tarot_recruitment.html">
-                  <img src="/img/news/official-tarot_news-202606.png" alt="公式タロットカード制作メンバー募集" />
-                </a>
-              </template>
-              <p>
-                <span class="p-bold">制作メンバー(敬称略)</span><br />
-                キャラクターイラスト：REITO_KYUN♡(黎兎)<br />
-                背景・3D制作：喜雨(kiu/xiyue)<br />
-                意匠デザイン：散狐アタスト, ラジアン(柏木主税)<br />
-                フォントデザイン：ラジアン(柏木主税)<br />
-                制作・企画：百花繚乱研究所(©ラジアン, 2021-2026)
-              </p>
-            </list-comp>
-          </div>
-          <div class="background1">
-            <h3>2025年秋</h3>
-            <list-comp :wide-style="true">
-              <template #title>「運命線探偵78」制作開始！</template>
-              <template #imagelink>
-                <img src="/img/news/pr_officialCard_202510.png" alt="「運命線探偵78」制作開始！" />
-              </template>
-              <p>
-                Misskeyユーザにピクリエで開催されたオンライン即売会「みすけっと」にて、公式タロットカードの進捗配布を行い、「運命線探偵78」の制作開始を発表しました。
-              </p>
-              <a class="a-link" href="https://radiann-kswg.booth.pm/items/7646689">制作進捗配布 Vol.1</a>
-            </list-comp>
-          </div>
-        </custom-scroll>
-      </div>
+		<div class="background0">
+			<h2>概要</h2>
+			<!-- 作品概要は author が記載してください -->
+			<p>
+				ラジアン(柏木主税)が趣味で同人制作しているタロットカード78枚をモチーフにした創作キャラクター。<br />
+				タロットカードそれぞれをモチーフにしたキャラクターが描かれた公式タロットの制作や、タロットカードに関する独自のコンテンツ制作を展開予定。
+			</p>
+			<div class="background1">
+				<h3>あらすじ</h3>
+				<p>
+					九蓮国に突如として発生した“未来消失”という神隠し現象を巡り、タロットカードでの占いを得意とする「錦野舞」と剣術に長けた妹の「錦野歌嫁」は、78の“アルカナホルダー”による異能調査組織「特殊探偵団セブンティエイト」の「采配幹部(ディーラーズ)」としていくつもの特殊事件に挑む。<br />
+					世界の運命を大きく揺るがす数多くの岐路(ブランチ)を巡る調査の果てで、彼女たちは少しずつ自らが歩むべき未来(あした)を見出していく－－
+				</p>
+			</div>
+			<div class="background1">
+				<h3>アルカナホルダーについて</h3>
+				<p>
+					78枚のタロットカードそれぞれを模した能力“アルカナホルダー”は、“未来消失”の原因となる運命の分岐：岐路(ブランチ)の異変を解決する力を有している。<br />
+					その能力は、幾度と重なる選択の過程に影響を及ぼす因果衝突(コンフリクト)を解消し
+					人々を正しい未来へ導く希望の光であり、同時に強力な世界改竄能力により身体と精神の分解と再構築を加速させるという
+					強大な代償を伴う命の絶望でもある。<br />
+					それぞれの能力を胸に未来(あした)の路を歩む姿は、まるで占星術のような悟りを有するかのようだった－－
+				</p>
+			</div>
+		</div>
 
-      <div class="background0">
-        <h2>外部リンク</h2>
-        <p>
-          <a class="a-link" href="https://database.numbertales-radiann.net/">創作ガイドライン/Creation Guidelines</a>
-          <a class="a-link" href="https://www.pixiv.net/users/44375569">原作者公式pixiv</a>
-          <a class="a-link" href="https://radiann-kswg.fanbox.cc/">原作者公式pixivFANBOX</a>
-          <a class="a-link" href="https://radiann-kswg.booth.pm/">原作者公式BOOTH</a>
-        </p>
-      </div>
-    </main>
-    <footer>
-      <div id="app-credit">
-        <footer-credit></footer-credit>
-      </div>
-    </footer>
-    <script src="/src/custom-scroll.js"></script>
-    <script src="/src/list-components.js"></script>
-    <script src="/src/credit-footer.js"></script>
-  </body>
+		<div>
+			<a href="/characters.html">
+				<h2 class="h2-a-link">キャラクター紹介はこちら</h2>
+			</a>
+		</div>
+
+		<div class="background0">
+			<h2>新着情報</h2>
+			<custom-scroll :horizontal="false">
+				<div class="background1">
+					<h3>進行中</h3>
+					<list-comp :wide-style="true">
+						<template #title>公式タロットカード<br />制作メンバー募集中！</template>
+						<template #imagelink>
+							<a href="/news/official-tarot_recruitment.html">
+								<img src="/img/news/official-tarot_news-202606.png" alt="公式タロットカード制作メンバー募集" />
+							</a>
+						</template>
+						<p>
+							<span class="p-bold">制作メンバー(敬称略)</span><br />
+							キャラクターイラスト：REITO_KYUN♡(黎兎)<br />
+							背景・3D制作：喜雨(kiu/xiyue)<br />
+							意匠デザイン：散狐アタスト, ラジアン(柏木主税)<br />
+							フォントデザイン：ラジアン(柏木主税)<br />
+							制作・企画：百花繚乱研究所(©ラジアン, 2021-2026)
+						</p>
+					</list-comp>
+				</div>
+				<div class="background1">
+					<h3>2025年秋</h3>
+					<list-comp :wide-style="true">
+						<template #title>「運命線探偵78」制作開始！</template>
+						<template #imagelink>
+							<img src="/img/news/pr_officialCard_202510.png" alt="「運命線探偵78」制作開始！" />
+						</template>
+						<p>
+							Misskeyユーザにピクリエで開催されたオンライン即売会「みすけっと」にて、公式タロットカードの進捗配布を行い、「運命線探偵78」の制作開始を発表しました。
+						</p>
+						<a class="a-link" href="https://radiann-kswg.booth.pm/items/7646689">制作進捗配布 Vol.1</a>
+					</list-comp>
+				</div>
+			</custom-scroll>
+		</div>
+
+		<div class="background0">
+			<h2>外部リンク</h2>
+			<p>
+				<a class="a-link" href="https://database.numbertales-radiann.net/">創作ガイドライン/Creation Guidelines</a>
+				<a class="a-link" href="https://www.pixiv.net/users/44375569">原作者公式pixiv</a>
+				<a class="a-link" href="https://radiann-kswg.fanbox.cc/">原作者公式pixivFANBOX</a>
+				<a class="a-link" href="https://radiann-kswg.booth.pm/">原作者公式BOOTH</a>
+			</p>
+		</div>
+	</main>
+	<footer>
+		<div id="app-credit">
+			<footer-credit></footer-credit>
+		</div>
+	</footer>
+	<script src="/src/custom-scroll.js"></script>
+	<script src="/src/list-components.js"></script>
+	<script src="/src/credit-footer.js"></script>
+</body>
+
 </html>
