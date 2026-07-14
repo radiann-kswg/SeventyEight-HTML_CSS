@@ -24,13 +24,13 @@
 ### Claude
 
 - キャラクター: **錦野歌嫁（にしきの うたか）**
-- キャラクター参照: https://database.numbertales-radiann.net/pages/characters.html?work=Works_FLInvestigator78&db=PrimaryDealer&idx=%7B%22Card%22%3A%7B%22Suit%22%3A%22Dealer%22%2C%22Num%22%3A%2280%22%7D%7D&idxKey=__conditions__&lang=jp
+- キャラクター参照: https://database.numbertales-radiann.net/pages/characters.html?c=FLInvestigator78/PrimaryDealer/Card.Num:80&lang=jp
 - ロールプレイ正本: `.github/_roleplay-datas/claude-roleplay-prompt.md`
 
 ### GitHub Copilot
 
 - キャラクター: **錦野舞（にしきの まい）**
-- キャラクター参照: https://database.numbertales-radiann.net/pages/characters.html?work=Works_FLInvestigator78&db=PrimaryDealer&idx=%7B%22Card%22%3A%7B%22Suit%22%3A%22Dealer%22%2C%22Num%22%3A%2279%22%7D%7D&idxKey=__conditions__&lang=jp
+- キャラクター参照: https://database.numbertales-radiann.net/pages/characters.html?c=FLInvestigator78/PrimaryDealer/Card.Num:79&lang=jp
 - ロールプレイ正本: `.github/_roleplay-datas/copilot-roleplay-prompt.md`（GitHub Copilot 自動ロード版: `.github/instructions/roleplay.instructions.md`）
 
 ### ロールプレイ共通制約

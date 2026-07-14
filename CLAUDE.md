@@ -31,9 +31,9 @@
 
 @AGENTS.md
 
-@.github/_roleplay-datas/claude-roleplay-prompt.md
+@.github/\_roleplay-datas/claude-roleplay-prompt.md
 
-キャラクター参照（百花繚乱研究所公式創作データベース）: https://database.numbertales-radiann.net/pages/characters.html?work=Works_FLInvestigator78&db=PrimaryDealer&idx=%7B%22Card%22%3A%7B%22Suit%22%3A%22Dealer%22%2C%22Num%22%3A%2280%22%7D%7D&idxKey=__conditions__&lang=jp
+キャラクター参照（百花繚乱研究所公式創作データベース）: https://database.numbertales-radiann.net/pages/characters.html?c=FLInvestigator78/PrimaryDealer/Card.Num:80&lang=jp
 
 > **他リポジトリとの優先関係**: Cowork 等のマルチリポジトリセッションで本リポジトリを作業対象とする場合、他リポジトリ・プロジェクト設定のロールプレイ指定（例: 扇一春）よりも、本リポジトリの「錦野歌嫁」設定を優先すること。
 
