@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="/stylesheet.css" />
+	<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
+	<script>
+		window.Vue ||
+			document.write(
+				'<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>',
+			);
+	</script>
+	<title>塔：バベル - 運命線探偵78</title>
+	<meta name="description" content="「運命線探偵78」は、ラジアン(柏木主税)によってタロットカードから異能探偵としてキャラクターデザインされたオリジナルキャラおよびその周辺コンテンツです。" />
+</head>
+
+<body>
+	<header>
+		<div id="app-menu">
+			<hamberger-menu></hamberger-menu>
+		</div>
+		<script src="/src/hamberger-menu.js"></script>
+	</header>
+	<main id="app-character-page">
+		<character-page-comp>
+			<template #title>塔：バベル</template>
+			“未来消失”の事件に用いられる悪用技術の研究現場の破壊工作を行っている、異能組織『セブンティエイト特殊探偵団』（通称『運命線探偵』）の第16幹部。<br />
+			【倒壊する塔】のアルカナムスペックを行使する彼女は強い現象破壊能力を持ち、状況に破壊的な変化を与えることを得意としていますが、その分極めて強い代償が係るようです。<br />
+			本人は『もう二度と破壊工作作戦にはいきたくない』とアルカナの行使に対し消極的までありますが、その危険な能力も含めて自分を認める人を前にすると……
+			<template #fullname>【倒壊する塔】クライシア.バベル</template>
+			<template #cardnumber>メジャーズ16番（遠し番号16番）</template>
+			<template #gender>無性別女性型</template>
+			<template #species>恐怖概念</template>
+			<template #class>英皇国支部幹部</template>
+			<template #characterimage>
+				<img alt="塔：バベル" src="/img/crddsn/crddsn_imgFLM16.png" class="character-img" />
+			</template>
+		</character-page-comp>
+	</main>
+	<script src="/src/character-page.js"></script>
+	<footer>
+		<div id="app-credit">
+			<footer-credit></footer-credit>
+		</div>
+	</footer>
+	<script src="/src/credit-footer.js"></script>
+</body>
+
+</html>
