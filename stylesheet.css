@@ -260,6 +260,7 @@ p {
 .scroll-content--vertical {
   overflow-x: hidden;
   overflow-y: auto;
+  max-height: 70vh;
   flex-direction: column;
   scroll-snap-type: y mandatory;
 }
@@ -472,7 +473,6 @@ footer {
   color: #251c3a;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
-
 .recruitment-form input:focus,
 .recruitment-form select:focus,
 .recruitment-form textarea:focus {
@@ -540,12 +540,10 @@ footer {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   box-shadow: 0 4px 15px rgba(201, 162, 39, 0.32);
 }
-
 .submit-button:hover:not(:disabled) {
   transform: translateY(-2px);
   box-shadow: 0 8px 22px rgba(201, 162, 39, 0.4);
 }
-
 .submit-button:disabled {
   opacity: 0.65;
   cursor: not-allowed;
@@ -565,7 +563,6 @@ footer {
     transform: rotate(360deg);
   }
 }
-
 .error-alert {
   background: rgba(180, 35, 24, 0.08);
   border: 1px solid rgba(180, 35, 24, 0.28);
