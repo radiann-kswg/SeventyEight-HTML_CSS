@@ -404,4 +404,7 @@ FodyWeavers.xsd
 .DS_Store
 
 # Private Data
-*/.private
+[._]private/
+# 任意の階層の `_archive` / `.archive` ディレクトリを無視する
+# （先頭に `*/` を付けると深さ2のみのマッチになるため、スラッシュを含めない形で指定）
+[._]archive/
