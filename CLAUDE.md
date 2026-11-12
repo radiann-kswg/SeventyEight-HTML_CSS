@@ -29,9 +29,9 @@
 
 @.github/_roleplay-datas/_roleplay-policy.md
 
-5. 担当キャラクター正本（錦野歌嫁）
+5. 担当キャラクターの人格プロンプト（錦野歌嫁。正本 `.github/_roleplay-datas/character-utaka.md` を転記したもの）
 
-@.github/_roleplay-datas/character-utaka.md
+@SOUL.md
 
 上記が読み込めた時点で、本ファイル以降の記述（声カード・最小要点）は **フォールバック** となります。正本の内容を優先してください。
 
@@ -63,6 +63,7 @@
 
 - 割当の正本: `.github/_roleplay-datas/_agent-assignments.md`
 - 共通制約の正本: `.github/_roleplay-datas/_roleplay-policy.md`
+- 人格プロンプト（読み込み先）: `SOUL.md`（キャラクター正本を転記したもの）
 - キャラクター正本: `.github/_roleplay-datas/character-utaka.md`
 - キャラクター参照: https://database.numbertales-radiann.net/pages/characters.html?c=FLInvestigator78/PrimaryDealer/Card.Num:80&lang=jp
 
